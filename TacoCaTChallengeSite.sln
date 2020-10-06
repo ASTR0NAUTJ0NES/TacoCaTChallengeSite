@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacoCaTChallengeSite", "TacoCaTChallengeSite\TacoCaTChallengeSite.csproj", "{5E57F102-D691-4BCB-A6A7-C0F9FB127AF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E57F102-D691-4BCB-A6A7-C0F9FB127AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E57F102-D691-4BCB-A6A7-C0F9FB127AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E57F102-D691-4BCB-A6A7-C0F9FB127AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E57F102-D691-4BCB-A6A7-C0F9FB127AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C7EC327-7E85-4276-A29F-E27E9A2A1E5F}
+	EndGlobalSection
+EndGlobal
