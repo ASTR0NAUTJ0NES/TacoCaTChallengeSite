@@ -2,89 +2,148 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="TacocaT Palindrome Detector">
     <meta name="author" content="Andrew Albanese">
 
-    <title>TacoCaT</title>
+    <title>TacocaT</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Content/custom.css" rel="stylesheet" />
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+    <link href="Content/css/one-page-wonder.min.css" rel="stylesheet" />
 
     <!-- Custom Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">TACOCAT</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.andrewalbaneseportfolio.com/">To Andrew Albanese's Portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="masthead text-center text-white">
-    <div class="masthead-content">
-      <div class="container">
-        <h1 class="masthead-heading mb-0">TacocaT Palindrome Detector</h1>
-        <h2 class="masthead-subheading mb-0">Find out if any word is a palindrome.</h2>
-      </div>
-    </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
-  </header>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/transparenttacocat.png" alt="">
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TACOCAT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.andrewalbaneseportfolio.com/">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">Please enter a word:</h2>
-            <input type="text" 
-          </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">TacocaT Palindrome Detector</h1>
+                <h2 class="masthead-subheading mb-0">Find out if any word is a palindrome.</h2>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-black">
+    <section id="inputSection">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid rounded-circle" src="../Images/transparenttacocat.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center">
+                        <h2 class="display-4">Please enter a word:</h2>
+                        <input type="text" id="inputWord" />
+                        <div class="row">
+                            <div class="col mt-5 text-right">
+                                <button type="submit" id="submitBtn" class="btn btn-primary btn-xl rounded-pill" data-toggle="modal" data-target="#resultModal">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="#resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">-->
+    <!-- Result Modal - Title-->
+    <!--<h2 class="modal-title text-secondary mb-0">TacocaT</h2>
+    <img src="../Images/tacocat-sm.png" />-->
+    <!-- Result Modal - Text-->
+    <!--<span id="resultSpan" class="h4 font-weight-bold mb-5"></span>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Result Modal-->
     <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; Andrew Albanese TacoCaT 2020</p>
+        <!-- Modal -->
+        <div class="modal fade" id="resultModal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header modal-orangered">
+                        <h4 class="modal-title text-white mb-0">TacocaT</h4>
+                        <button type="button" class="close text-right" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body text-center" id="modalBody">
+                        <span id="resultSpan" class="h4 font-weight-bold mb-5"></span>
+                    </div>
+                    <div class="modal-footer modal-orangered">
+                        <button type="button" class="btn btn-default btn btn-primary btn-xl rounded-pill" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.container -->
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <p class="m-0 text-center text-white small">Copyright &copy; Andrew Albanese TacoCaT 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="Scripts/custom.js"></script>
 
 </body>
 

@@ -68,14 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="css\one-page-wonder.css" />
-    <Content Include="css\one-page-wonder.min.css" />
+    <Content Include="Content\css\one-page-wonder.css" />
+    <Content Include="Content\css\one-page-wonder.min.css" />
+    <Content Include="Content\custom.css" />
     <Content Include="gulpfile.js" />
-    <Content Include="img\01.jpg" />
-    <Content Include="img\02.jpg" />
-    <Content Include="img\03.jpg" />
-    <Content Include="img\favicon.ico" />
-    <Content Include="img\transparenttacocat.png" />
+    <Content Include="Images\01.jpg" />
+    <Content Include="Images\02.jpg" />
+    <Content Include="Images\03.jpg" />
+    <Content Include="Images\tacocat-sm.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\transparenttacocat.png" />
     <Content Include="index.html" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -87,6 +89,7 @@
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="vendor\jquery\jquery.js" />
     <Content Include="vendor\jquery\jquery.min.js" />
     <Content Include="vendor\jquery\jquery.slim.js" />
@@ -104,13 +107,13 @@
     <Content Include="package.json" />
     <None Include="packages.config" />
     <Content Include="README.md" />
-    <Content Include="scss\one-page-wonder.scss" />
-    <Content Include="scss\_bootstrap-overrides.scss" />
-    <Content Include="scss\_global.scss" />
-    <Content Include="scss\_masthead.scss" />
-    <Content Include="scss\_mixins.scss" />
-    <Content Include="scss\_navbar.scss" />
-    <Content Include="scss\_variables.scss" />
+    <Content Include="Content\scss\one-page-wonder.scss" />
+    <Content Include="Content\scss\_bootstrap-overrides.scss" />
+    <Content Include="Content\scss\_global.scss" />
+    <Content Include="Content\scss\_masthead.scss" />
+    <Content Include="Content\scss\_mixins.scss" />
+    <Content Include="Content\scss\_navbar.scss" />
+    <Content Include="Content\scss\_variables.scss" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />

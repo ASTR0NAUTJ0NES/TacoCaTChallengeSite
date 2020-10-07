@@ -1,0 +1,14 @@
+/* Custom CSS */
+
+#inputSection {
+    padding-bottom: 3rem;
+}
+
+.modal-orangered {
+    background-color: orangered;
+}
+
+#modalBody {
+    padding: 4rem;
+}
+
