@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="TacocaT Palindrome Detector">
+    <meta name="author" content="Andrew Albanese">
+
+    <title>TacocaT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Code CSS -->
+    <link href="Content/customCode.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="Content/css/one-page-wonder.min.css" rel="stylesheet" />
+
+    <!-- Custom Favicon -->
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+
+    <!-- Prism JS -->
+    <script src="Scripts/prism.js"></script>
+
+    <!-- Prism CSS -->
+    <link href="Content/prism.css" rel="stylesheet" />
+</head>
+
+<body id="codeBody">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TACOCAT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.andrewalbaneseportfolio.com/">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-8 offset-2" id="codeDisplay">
+        <!-- JS Code -->
+        <pre>
+            <code class="language-js line-numbers">
+                // Custom JS
+
+                // function which reverses the string passed in and returns it
+                function reverseString(word) {
+                    let reversedWord = "";
+
+                    for (let loop = word.length - 1; loop >= 0; loop--) {
+                    reversedWord += word.charAt(loop);
+                    }
+
+                    return reversedWord;
+                }
+
+                // function which returns whether or not the string passed in is a palindrome
+                function isPalindrome(word) {
+                    let isPal = false;
+                    if (reverseString(word) == word) {
+                        isPal = true;
+                    }
+                    return isPal;
+                }
+
+                // event listener for the submit button which prints results to the user
+                document.getElementById("submitBtn").addEventListener("click", function () {
+                    let inputPal = document.getElementById("inputWord").value;
+
+                    let modifiedPal = inputPal.toLowerCase(); // replace all caps with lowercase
+                    modifiedPal = modifiedPal.replace(" ", ""); // getting rid of whitespace
+
+                    if (isPalindrome(modifiedPal)) {
+                        document.getElementById("resultSpan").innerText =
+                            "The word " + inputPal + " is a palindrome! \n
+                            This word backwards is: " + reverseString(inputPal);
+                    } else {
+                        document.getElementById("resultSpan").innerText =
+                            "The word " + inputPal + " is a NOT a palindrome. \n
+                            This word backwards is: " + reverseString(inputPal);
+                    }
+                });
+            </code>
+        </pre>
+
+        <!-- CSS Code -->
+        <pre>
+            <code class="language-css line-numbers">
+                /* Custom CSS */
+
+                #inputSection {
+                    padding-bottom: 3rem;
+                }
+
+                .modal-orangered {
+                    background-color: orangered;
+                }
+
+                #modalBody {
+                    padding: 4rem;
+                }
+            </code>
+        </pre>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <p class="m-0 text-center text-white small">Copyright &copy; Andrew P. Albanese 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

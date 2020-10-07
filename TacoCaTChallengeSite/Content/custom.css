@@ -4,11 +4,10 @@
     padding-bottom: 3rem;
 }
 
-.modal-orangered {
-    background-color: orangered;
+.modal-orange {
+    background-color: #ff6a00;
 }
 
 #modalBody {
     padding: 4rem;
 }
-

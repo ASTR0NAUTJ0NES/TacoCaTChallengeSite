@@ -1,0 +1,9 @@
+/* Custom Code CSS */
+
+#codeBody {
+    background-image: linear-gradient(0deg,#ee0979 0,#ff6a00 100%)
+}
+
+#codeDisplay {
+    padding-top: 3.7rem;
+}

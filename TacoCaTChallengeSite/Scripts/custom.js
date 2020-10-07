@@ -1,5 +1,6 @@
 // Custom JS
 
+// function which reverses the string passed in and returns it
 function reverseString(word) {
     let reversedWord = "";
 
@@ -10,6 +11,7 @@ function reverseString(word) {
     return reversedWord;
 }
 
+// function which returns whether or not the string passed in is a palindrome
 function isPalindrome(word) {
     let isPal = false;
     if (reverseString(word) == word) {
@@ -18,6 +20,7 @@ function isPalindrome(word) {
     return isPal;
 }
 
+// event listener for the submit button which prints results to the user
 document.getElementById("submitBtn").addEventListener("click", function () {
     let inputPal = document.getElementById("inputWord").value;
 
