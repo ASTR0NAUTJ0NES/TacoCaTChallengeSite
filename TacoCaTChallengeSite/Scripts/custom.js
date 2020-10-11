@@ -33,3 +33,18 @@ document.getElementById("submitBtn").addEventListener("click", function () {
         document.getElementById("resultSpan").innerText = "The word " + inputPal + " is a NOT a palindrome. \n This word backwards is: " + reverseString(inputPal);
     }
 });
+
+// event listener which only allows a word to be entered by the user
+document.getElementById("inputWord").addEventListener("keydown", function (e) {
+    var char = (e.which) ? e.which : e.keyCode;
+
+    // allow only letters
+    if (char >= 97 && char <= 122 ||
+        char >= 65 && char <= 90 ||
+        char == 8) {
+        return true;
+    } else {
+        e.preventDefault();
+        return false;
+    }
+});
